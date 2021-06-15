@@ -1,0 +1,182 @@
+.footer {
+   margin: 0 auto;
+   width: 100%;
+   &-nav {
+      .about-company {
+         padding-top: 40px;
+         .footer__description {
+            display: none;
+         }
+         .downloads {
+            display: flex;
+            justify-content: center;
+            margin: 31px auto 0;
+            img:last-of-type {
+               margin-left: 10px;
+            }
+         }
+         .footer-line-mobile {
+            margin-top: 40px;
+            height: 1px;
+            background-color: #e3e3e3;
+         }
+      }
+      .additional-navigation {
+         margin-top: 30px;
+         &__column {
+            margin-left: 15px;
+         }
+         &__column-mobile {
+            margin-top: 30px;
+         }
+         .nav-links {
+            &__title {
+               font-size: 22px;
+               line-height: 28px;
+               color: $mainTextColor;
+            }
+            &__list {
+               list-style-type: none;
+               padding: 0;
+               margin: 0;
+            }
+            &__list-item {
+               line-height: 30px;
+               color: $mainTextColor;
+               opacity: 0.6;
+            }
+         }
+      }
+   }
+   &__line {
+      display: none;
+   }
+   .footer-links {
+      margin-left: 15px;
+      .terms {
+         display: flex;
+         justify-content: space-between;
+         width: 180px;
+         margin-top: 30px;
+         &__item {
+            font-size: 14px;
+            line-height: 22px;
+            color: $mainTextColor;
+            text-decoration: none;
+            opacity: 0.6;
+         }
+      }
+      .social-links {
+         display: flex;
+         height: 18px;
+         margin-top: 31px;
+         margin-bottom: 22px;
+         &__item {
+            display: inline-block;
+            margin-left: 20px;
+            color: $mainTextColor;
+            opacity: 0.6;
+         }
+         &__item_twitter {
+            align-self: center;
+            margin-left: 0;
+            width: 21px;
+            height: 16px;
+         }
+         &__item_facebook {
+            width: 18px;
+            height: 17px;
+         }
+         &__item_linkedin {
+            width: 18px;
+            height: 17px;
+         }
+      }
+   }
+}
+
+@media (min-width: 400px) {
+   .footer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      &-nav {
+         display: flex;
+         padding: 44px 0 0 130px;
+         height: 338px;
+         .about-company {
+            padding: 0;
+            .footer__description {
+               display: block;
+               margin: 26px 0 0;
+               width: 360px;
+               line-height: 26px;
+               color: $mainTextColor;
+               opacity: 0.6;
+            }
+            .downloads {
+               justify-content: unset;
+               margin: 25px 0 0;
+            }
+            .footer-line-mobile {
+               display: none;
+            }
+         }
+         .additional-navigation {
+            display: flex;
+            margin: 13px 0 0 126px;
+            .nav-links {
+               width: 265px;
+               &__title {
+                  margin: 0 0 18px;
+               }
+            }
+            &__column {
+               margin-left: 29px;
+            }
+            &__column-mobile {
+               margin-top: 0;
+            }
+         }
+      }
+      &__line {
+         display: block;
+         margin: 0 auto;
+         width: 1400px;
+         height: 1px;
+         background-color: $mainTextColor;
+         opacity: 0.1;
+      }
+      .footer-links {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-left: 0;
+         padding: 0 130px 0 130px;
+         height: 50px;
+         .terms {
+            margin-top: 0;
+         }
+         .social-links {
+            margin-top: 0;
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+@media (max-width: 399px) {
+   .footer .logo {
+      display: block;
+      &__image {
+         display: block;
+         margin: auto;
+      }
+      &__name {
+         margin-top: 20px;
+         text-align: center;
+      }
+      &__description {
+         text-align: center;
+      }
+   }
+}

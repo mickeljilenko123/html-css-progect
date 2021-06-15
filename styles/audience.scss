@@ -1,0 +1,127 @@
+.audience {
+   padding: 50px 15px;
+   background-color: rgba(0, 161, 198, 0.07);
+   &__engage {
+      margin: 0;
+      font-size: 22px;
+      line-height: 34px;
+      text-align: center;
+      color: $mainTextColor;
+   }
+   &__heading {
+      margin: 0;
+      margin-top: 17px;
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.357143px;
+      text-align: center;
+      color: $mainTextColor;
+   }
+   &__descr {
+      margin: 18px 0 0;
+      font-size: 24px;
+      line-height: 34px;
+      color: $mainTextColor;
+      text-align: center;
+   }
+   .audience-action {
+      margin: 30px 0 40px;
+   }
+   &__action-btn {
+      width: 100%;
+   }
+   &__learn-btn {
+      width: 100%;
+      margin: 12px 0 0;
+   }
+   .user-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 300px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+         inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+      img {
+         margin-top: 22px;
+      }
+      &-heading {
+         margin-top: 22px;
+         font-size: 22px;
+         line-height: 28px;
+      }
+
+      &-robohead {
+         img {
+            width: 138px;
+         }
+      }
+      &-tv {
+         background-color: #3141c5;
+         color: #fff;
+         box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15), 0px 11px 55px rgba(0, 0, 0, 0.07);
+         img {
+            width: 142px;
+         }
+      }
+      &-run {
+         img {
+            width: 160px;
+         }
+      }
+      &-lamp {
+         img {
+            width: 119px;
+         }
+         img,
+         user-card-heading {
+            transform: translateX(-14px);
+         }
+      }
+   }
+}
+
+@media (min-width: 400px) {
+   .audience {
+      padding: 108px 130px 110px;
+      &__heading {
+         margin: 24px auto 0;
+         width: 555px;
+         font-size: 56px;
+         line-height: 56px;
+         letter-spacing: -0.5px;
+      }
+      &__descr {
+         margin: 30px auto 0;
+         width: 555px;
+      }
+      .audience-action {
+         display: flex;
+         justify-content: center;
+         margin: 34px 0 0;
+      }
+      &__action-btn {
+         width: 160px;
+      }
+      &__learn-btn {
+         width: 158px;
+         margin: 0 0 0 10px;
+      }
+      .user-card-container {
+         display: flex;
+         justify-content: space-between;
+         margin-top: 111px;
+      }
+      .user-card {
+         width: 262px;
+         &-lamp {
+            img,
+            .user-card-heading {
+               transform: unset;
+            }
+         }
+      }
+   }
+}

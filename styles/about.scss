@@ -1,0 +1,36 @@
+.about {
+   padding: 46px 15px;
+   width: 100%;
+   background-color: #f4f5f7;
+   .article {
+      &__title {
+         margin: 0;
+         font-size: 22px;
+         line-height: 32px;
+         color: $mainTextColor;
+      }
+      &__text {
+         margin: 6px 0 0;
+         font-size: 22px;
+         line-height: 32px;
+         color: $mainTextColor;
+      }
+   }
+   .article:last-child {
+      margin-top: 20px;
+   }
+}
+
+@media (min-width: 400px) {
+   .about {
+      display: flex;
+      justify-content: space-between;
+      padding: 77px 130px 76px;
+      .article {
+         width: 560px;
+      }
+      .article:last-child {
+         margin-top: 0;
+      }
+   }
+}

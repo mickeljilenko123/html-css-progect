@@ -1,0 +1,60 @@
+.tips {
+   margin-top: 8px;
+   .tip {
+      padding: 40px 15px 0;
+      border-bottom: 1px solid #e3e3e3;
+      &__subtitle {
+         font-size: 22px;
+         line-height: 34px;
+         font-weight: 700;
+         color: #009b4d;
+      }
+      &__title {
+         margin: 15px 0 0;
+         font-size: 40px;
+         line-height: 40px;
+         letter-spacing: -0.36px;
+         color: $mainTextColor;
+      }
+      &__descr {
+         margin: 13px 0 0;
+         font-size: 24px;
+         line-height: 34px;
+      }
+      &__decoration {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: 0 0 40px;
+         &_capture {
+            margin-top: 20px;
+         }
+      }
+      &__image {
+         margin-top: 29px;
+      }
+      &__image-caption {
+         margin-top: 20px;
+         max-width: 100%;
+         font-size: 14px;
+         line-height: 22px;
+         color: $mainTextColor;
+         opacity: 0.6;
+      }
+   }
+   .tip:last-child {
+      padding-bottom: 50px;
+   }
+   .tip:nth-child(2) .tip__descr {
+      margin-top: 18px;
+   }
+   .tip:last-child .tip__descr {
+      margin-top: 13px;
+   }
+}
+
+@media (min-width: 400px) {
+   .tips {
+      display: none;
+   }
+}

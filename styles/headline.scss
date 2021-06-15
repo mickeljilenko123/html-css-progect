@@ -1,0 +1,83 @@
+.headline {
+   width: 100%;
+   &-text {
+      padding: 35px 15px 0;
+   }
+   &__title {
+      margin: 0;
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -0.31px;
+      color: $mainTextColor;
+   }
+   &__description {
+      margin: 24px 0 0;
+      font-size: 24px;
+      line-height: 34px;
+      color: $mainTextColor;
+   }
+   &__buttons {
+      margin: 30px auto 0;
+   }
+   &__get-started-btn {
+      display: block;
+      margin: 0 auto;
+      width: 290px;
+      line-height: 13px;
+   }
+   &__learn-btn {
+      display: block;
+      margin: 15px auto 0;
+      width: 290px;
+   }
+   &__banner {
+      margin: 33px 0 36px;
+      width: 100%;
+   }
+}
+
+@media (min-width: 400px) {
+   .headline {
+      margin: 76px auto 0;
+      width: 1140px;
+      &-text {
+         position: relative;
+         z-index: 2;
+         margin: 0;
+         padding: 0;
+      }
+      &__title {
+         width: 754px;
+         height: 165px;
+         font-size: 80px;
+         line-height: 78px;
+         letter-spacing: -0.5px;
+      }
+      &__description {
+         margin: 34px 0 0;
+         width: 456px;
+         height: 102px;
+      }
+      &__buttons {
+         display: flex;
+         margin: 58px 0 126px;
+      }
+      &__get-started-btn {
+         display: inline-block;
+         margin: 0;
+         width: 160px;
+      }
+      &__learn-btn {
+         margin: 0 0 0 10px;
+         width: 158px;
+      }
+      &__banner {
+         position: absolute;
+         top: 185px;
+         right: 25px;
+         margin: 0;
+         width: auto;
+         z-index: 1;
+      }
+   }
+}
